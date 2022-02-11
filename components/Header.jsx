@@ -45,8 +45,13 @@ const Header = () => {
               <CartCount>{cartContext.cart.totalQuantity}</CartCount>
             )}
           </CartButton>
-          <a href="/contact">
-            <Avatar src={USER.avatar} alt="Show Cart" width={24} height={24} />
+          <a href="/profile">
+            <Image
+              src={USER.avatar}
+              alt="User Profile"
+              width={24}
+              height={24}
+            />
           </a>
         </NavWrapper>
         <MobileMenu
@@ -131,10 +136,6 @@ const NavLink = styled.a`
       margin-bottom: -3px;
     }
   }
-`;
-
-const Avatar = styled(Image)`
-  width: 24px;
 `;
 
 const CartButton = styled(UnstyledButton)`
