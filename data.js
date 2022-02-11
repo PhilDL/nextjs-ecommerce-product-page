@@ -1,6 +1,7 @@
+import avatarImg from "./public/assets/image-avatar.png";
 export const USER = {
   name: "John Doe",
-  avatar: "/assets/image-avatar.png",
+  avatar: avatarImg,
 };
 
 export const PRODUCT = {
