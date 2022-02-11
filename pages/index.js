@@ -9,12 +9,7 @@ import { CartContextProvider } from "../store/cart-context";
 export default function Home() {
   return (
     <CartContextProvider>
-      <Head>
-        <link
-          href="https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap"
-          rel="stylesheet"
-        />
-      </Head>
+      <Head></Head>
       <Header />
       <Main>
         <Product product={PRODUCT} />
