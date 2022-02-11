@@ -26,6 +26,7 @@ const Header = () => {
           </MobileMenuButton>
           <LogoWrapper href="/">
             <Logo />
+            <VisuallyHidden>Homepage of Sneakers</VisuallyHidden>
           </LogoWrapper>
           <Navigation>
             <NavLink href="/sale">Collection</NavLink>
