@@ -32,6 +32,7 @@ const ProductImagesCarousel = ({ images, productName }) => {
           alt={productName}
           layout="fill"
           onClick={() => setCarouselImageZoomIn(true)}
+          priority
         />
         <PrevButton onClick={onPrevImageHandler}>
           <IconPrevious width={12} />
