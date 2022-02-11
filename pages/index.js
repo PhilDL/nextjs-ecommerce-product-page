@@ -9,7 +9,14 @@ import { CartContextProvider } from "../store/cart-context";
 export default function Home() {
   return (
     <CartContextProvider>
-      <Head></Head>
+      <Head>
+        <title>Ecommerce Product page NextJS</title>
+        <meta name="viewport" content="initial-scale=1.0, width=device-width" />
+        <meta
+          name="description"
+          content="Traning CSS StyledComponent React And NextJS"
+        />
+      </Head>
       <Header />
       <Main>
         <Product product={PRODUCT} />
