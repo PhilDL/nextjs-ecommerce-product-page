@@ -44,8 +44,6 @@ const CarouselImageZoomIn = ({
           {images.map((image, index) => (
             <CarouselImageThumbnail
               key={index}
-              width={88}
-              height={88}
               src={image.thumbnail}
               alt={productName}
               onClick={onSetIndex.bind(this, index)}
@@ -103,7 +101,7 @@ const CarouselImagesRow = styled.div`
   justify-content: space-around;
 `;
 
-const CarouselImageThumbnail = styled(Image)`
+const CarouselImageThumbnail = styled.img`
   width: 64px;
   @media ${QUERIES.tabletAndUp} {
     width: 88px;
